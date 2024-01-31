@@ -3,7 +3,15 @@
     Const KM2MI_CONV_RATE = 1.609344
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnConvert.Click
         Try
-            txtMi.Text = txtKm.Text / KM2MI_CONV_RATE
+            'Otse arvutused ekraanivormist
+            ' txtMi.Text = txtKm.Text / KM2MI_CONV_RATE
+
+            'Vastuse arvutus kasutades komponenti
+            Dim converter As PrjConverterComponent.IConverter
+            converter = New PrjConverterComponent.CConverter
+
+            txtMi.Text = converter.ConvertKilometersToMiles(txtKm.Text)
+
         Catch ex As Exception
             'MsgBox("Tekkis viga!", MsgBoxStyle.Critical, "KÕIK ON KATKI!!!")
             txtMi.Text = "Sisendi viga!"
