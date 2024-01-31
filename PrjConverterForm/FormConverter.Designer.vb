@@ -45,6 +45,7 @@ Partial Class FormConverter
         '
         'txtMi
         '
+        Me.txtMi.Enabled = False
         Me.txtMi.Location = New System.Drawing.Point(360, 213)
         Me.txtMi.Name = "txtMi"
         Me.txtMi.Size = New System.Drawing.Size(240, 26)
@@ -77,6 +78,9 @@ Partial Class FormConverter
         Me.Label2.Size = New System.Drawing.Size(122, 20)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Tagasta miilides"
+        '
+        'timerClock
+        '
         '
         'lblClock
         '
