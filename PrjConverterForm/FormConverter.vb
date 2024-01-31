@@ -10,7 +10,8 @@
             Dim converter As PrjConverterComponent.IConverter
             converter = New PrjConverterComponent.CConverter
 
-            txtMi.Text = converter.ConvertKilometersToMiles(txtKm.Text)
+            Dim ans = converter.ConvertKilometersToMiles(txtKm.Text)
+            txtMi.Text = Math.Round(ans, 3)
 
         Catch ex As Exception
             'MsgBox("Tekkis viga!", MsgBoxStyle.Critical, "KÕIK ON KATKI!!!")
