@@ -51,6 +51,7 @@ Partial Class formKasutajaAken
         '
         Me.txtValjundTekst1.Location = New System.Drawing.Point(353, 161)
         Me.txtValjundTekst1.Name = "txtValjundTekst1"
+        Me.txtValjundTekst1.ReadOnly = True
         Me.txtValjundTekst1.Size = New System.Drawing.Size(210, 26)
         Me.txtValjundTekst1.TabIndex = 1
         '
@@ -58,6 +59,7 @@ Partial Class formKasutajaAken
         '
         Me.txtValjundTekst2.Location = New System.Drawing.Point(353, 257)
         Me.txtValjundTekst2.Name = "txtValjundTekst2"
+        Me.txtValjundTekst2.ReadOnly = True
         Me.txtValjundTekst2.Size = New System.Drawing.Size(210, 26)
         Me.txtValjundTekst2.TabIndex = 2
         '
@@ -99,7 +101,7 @@ Partial Class formKasutajaAken
         '
         'btnPoora2
         '
-        Me.btnPoora2.Location = New System.Drawing.Point(353, 289)
+        Me.btnPoora2.Location = New System.Drawing.Point(353, 279)
         Me.btnPoora2.Name = "btnPoora2"
         Me.btnPoora2.Size = New System.Drawing.Size(210, 31)
         Me.btnPoora2.TabIndex = 7
