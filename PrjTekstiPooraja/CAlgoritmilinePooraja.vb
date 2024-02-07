@@ -1,4 +1,4 @@
-﻿Public Class CTekstiPooraja
+﻿Public Class CAlgoritmilinePooraja
     Implements ITeisendused
 
     'Klassi CTesktiPooraja atribuudid (muutujad)
@@ -38,14 +38,52 @@
         End Set
     End Property
 
-    Private Sub teisendaTekst(ByRef strSisendTekst As String) _
+    Public Sub teisendaTekst(ByRef strSisendTekst As String) _
         Implements ITeisendused.teisendaTekst
-        strPooratavTekst = StrReverse(strSisendTekst)
+
+        strPooratavTekst = strSisendTekst
+        Dim charArray() As Char = strPooratavTekst.ToCharArray()
+        Dim length As Integer = Len(strPooratavTekst)
+        Dim left As Integer = 0
+        Dim right As Integer = length - 1
+
+        While left < right
+            'vaheta charrid
+            Dim temp As Char = charArray(left)
+            charArray(left) = charArray(right)
+            charArray(right) = temp
+
+            'move counters towards the center
+            left += 1
+            right -= 1
+        End While
+
+        'Loo uus string tähtede massiivist
+        strPooratavTekst = New String(charArray)
     End Sub
 
-    Private Function pooraTekst() As String _
+
+    Public Function pooraTekst() As String _
         Implements ITeisendused.pooraTekst
-        Return StrReverse(strPooratavTekst)
+
+        Dim charArray() As Char = strPooratavTekst.ToCharArray()
+        Dim length As Integer = charArray.Length
+        Dim left As Integer = 0
+        Dim right As Integer = length - 1
+
+        While left < right
+            ' vaheta charrid
+            Dim temp As Char = charArray(left)
+            charArray(left) = charArray(right)
+            charArray(right) = temp
+
+            ' Move pointers towards the center
+            left += 1
+            right -= 1
+        End While
+
+        'tagasta uus string tähtede massiivist
+        Return New String(charArray)
     End Function
 
     Private Function otsiTaishaalik() As String _

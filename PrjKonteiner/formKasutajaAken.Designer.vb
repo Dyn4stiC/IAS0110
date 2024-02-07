@@ -36,6 +36,8 @@ Partial Class formKasutajaAken
         Me.TimerUuenda = New System.Windows.Forms.Timer(Me.components)
         Me.lblTekstiPikkus = New System.Windows.Forms.Label()
         Me.lblTaisHaalikud = New System.Windows.Forms.Label()
+        Me.lblAlgoritmiline = New System.Windows.Forms.Label()
+        Me.cbAlgoritmiline = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'txtSisendTekst
@@ -115,6 +117,7 @@ Partial Class formKasutajaAken
         '
         'btnStop
         '
+        Me.btnStop.Enabled = False
         Me.btnStop.Location = New System.Drawing.Point(528, 365)
         Me.btnStop.Name = "btnStop"
         Me.btnStop.Size = New System.Drawing.Size(116, 57)
@@ -142,11 +145,31 @@ Partial Class formKasutajaAken
         Me.lblTaisHaalikud.Size = New System.Drawing.Size(0, 20)
         Me.lblTaisHaalikud.TabIndex = 11
         '
+        'lblAlgoritmiline
+        '
+        Me.lblAlgoritmiline.AutoSize = True
+        Me.lblAlgoritmiline.Location = New System.Drawing.Point(24, 19)
+        Me.lblAlgoritmiline.Name = "lblAlgoritmiline"
+        Me.lblAlgoritmiline.Size = New System.Drawing.Size(163, 20)
+        Me.lblAlgoritmiline.TabIndex = 12
+        Me.lblAlgoritmiline.Text = "Algoritmiline lahendus"
+        '
+        'cbAlgoritmiline
+        '
+        Me.cbAlgoritmiline.AutoSize = True
+        Me.cbAlgoritmiline.Location = New System.Drawing.Point(202, 19)
+        Me.cbAlgoritmiline.Name = "cbAlgoritmiline"
+        Me.cbAlgoritmiline.Size = New System.Drawing.Size(22, 21)
+        Me.cbAlgoritmiline.TabIndex = 13
+        Me.cbAlgoritmiline.UseVisualStyleBackColor = True
+        '
         'formKasutajaAken
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(831, 450)
+        Me.Controls.Add(Me.cbAlgoritmiline)
+        Me.Controls.Add(Me.lblAlgoritmiline)
         Me.Controls.Add(Me.lblTaisHaalikud)
         Me.Controls.Add(Me.lblTekstiPikkus)
         Me.Controls.Add(Me.btnStop)
@@ -179,4 +202,6 @@ Partial Class formKasutajaAken
     Friend WithEvents TimerUuenda As Timer
     Friend WithEvents lblTekstiPikkus As Label
     Friend WithEvents lblTaisHaalikud As Label
+    Friend WithEvents lblAlgoritmiline As Label
+    Friend WithEvents cbAlgoritmiline As CheckBox
 End Class
