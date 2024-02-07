@@ -29,11 +29,11 @@
     End Property
 
     'Atribuut strTekst seadistamine
-    Private Property strTekst As Integer Implements ITeisendused.strTekst
+    Private Property strTekst As String Implements ITeisendused.strTekst
         Get
             Return strPooratavTekst
         End Get
-        Set(value As Integer)
+        Set(value As String)
             strPooratavTekst = value
         End Set
     End Property

@@ -24,7 +24,34 @@
 
     End Sub
 
-    Private Sub btnPoora2_Click(sender As Object, e As EventArgs) Handles btnPoora2.Click
+    Private Sub btnPoora2_Click(sender As Object, e As EventArgs) _
+        Handles btnPoora2.Click
+
+        'Objekti loomine liidese baasil; referentsmuutuja pooraja dekla.
+        Dim pooraja As PrjTekstiPooraja.ITeisendused
+        'Seadistame referentsmuutuja viitama uuele objektile
+        pooraja = New PrjTekstiPooraja.CTekstiPooraja
+
+        'TEOSTAME TESTI PÖÖRAMISE KASUTADES PARAMEETRISEERIMATA FUNKTSIOONI pooraTekst
+        'NING LIIDESEATRIBUUTI strTekst
+        'omistame liidese atrib. tkstiväljal oleva väärtuse
+        pooraja.teisendaTekst(txtSisendTekst.Text)
+
+        txtValjundTekst2.Text = pooraja.strTekst
+
+    End Sub
+
+    Private Sub TimerUuenda_Tick(sender As Object, e As EventArgs) Handles TimerUuenda.Tick
+
+    End Sub
+
+    Private Sub btnStart_Click(sender As Object, e As EventArgs) _
+        Handles btnStart.Click
+
+        'vajutus nupul btnStart lülitab taimeri timerUuenda sisse
+        TimerUuenda.Enabled = True
+        'vajutus nupul btnStart keelab vajutused nupul btnStart
+        btnStart.Enabled = False
 
     End Sub
 End Class
