@@ -47,4 +47,23 @@
         Implements ITeisendused.pooraTekst
         Return StrReverse(strPooratavTekst)
     End Function
+
+    Private Function otsiTaishaalik() As String _
+        Implements ITeisendused.otsiTaishaalik
+
+        Dim I As Integer
+        Dim nVowels As Integer
+        Dim Vowels As String
+        Dim InputString As String
+
+        Vowels = "aeiouõäöü"
+        InputString = strPooratavTekst
+
+        For I = 1 To Len(InputString)
+            If InStr(Vowels, Mid(InputString, I, 1)) Then
+                nVowels = nVowels + 1
+            End If
+        Next
+        Return "Täishäälikuid: " & nVowels
+    End Function
 End Class

@@ -41,11 +41,21 @@
 
     End Sub
 
-    Private Sub TimerUuenda_Tick(sender As Object, e As EventArgs) Handles TimerUuenda.Tick
+    Private Sub TimerUuenda_Tick(ByVal sender As Object, ByVal e As EventArgs) _
+        Handles TimerUuenda.Tick
+
+        Dim pooraja As PrjTekstiPooraja.ITeisendused
+
+        pooraja = New PrjTekstiPooraja.CTekstiPooraja
+
+
+        pooraja.strTekst = txtSisendTekst.Text
+
+        txtValjundTekst1.Text = pooraja.pooraTekst
 
     End Sub
 
-    Private Sub btnStart_Click(sender As Object, e As EventArgs) _
+    Private Sub btnStart_Click(ByVal sender As Object, ByVal e As EventArgs) _
         Handles btnStart.Click
 
         'vajutus nupul btnStart lülitab taimeri timerUuenda sisse
@@ -54,4 +64,29 @@
         btnStart.Enabled = False
 
     End Sub
+
+    Private Sub btnStop_Click(ByVal sender As Object, ByVal e As EventArgs) _
+        Handles btnStop.Click
+
+        'vajutus nupul btnStart lülitab taimeri timerUuenda välja
+        TimerUuenda.Enabled = False
+        'vajutus nupul btnStart lubab vajutused nupul btnStart
+        btnStart.Enabled = True
+    End Sub
+
+
+    Private Sub txtSisendTekst_TextChanged(sender As Object, e As EventArgs) _
+        Handles txtSisendTekst.TextChanged
+
+        lblTekstiPikkus.Text = Len(txtSisendTekst.Text)
+
+        Dim pooraja As PrjTekstiPooraja.ITeisendused
+        pooraja = New PrjTekstiPooraja.CTekstiPooraja
+        pooraja.strTekst = txtSisendTekst.Text
+        lblTaisHaalikud.Text = pooraja.otsiTaishaalik
+
+
+
+    End Sub
+
 End Class

@@ -4,6 +4,7 @@
     Property strTekst As String 'Kasutaja sisestatud teksti jaoks
 
     Function pooraTekst() As String 'Liidese meetodid koodi ei oma
+    Function otsiTaishaalik() As String 'Funktsionn taishaalikute arvu leidmsks
     Sub teisendaTekst(ByRef strSisendTekst As String)
 
 

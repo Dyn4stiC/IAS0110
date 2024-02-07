@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class formKasutajaAken
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,20 +20,22 @@ Partial Class formKasutajaAken
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.txtSisendTekst = New System.Windows.Forms.TextBox()
         Me.txtValjundTekst1 = New System.Windows.Forms.TextBox()
         Me.txtValjundTekst2 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lblSisendTekst = New System.Windows.Forms.Label()
+        Me.lblValjundTekst1 = New System.Windows.Forms.Label()
+        Me.lblValjundTekst2 = New System.Windows.Forms.Label()
         Me.btnPoora1 = New System.Windows.Forms.Button()
         Me.btnPoora2 = New System.Windows.Forms.Button()
         Me.btnStart = New System.Windows.Forms.Button()
         Me.btnStop = New System.Windows.Forms.Button()
         Me.TimerUuenda = New System.Windows.Forms.Timer(Me.components)
+        Me.lblTekstiPikkus = New System.Windows.Forms.Label()
+        Me.lblTaisHaalikud = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'txtSisendTekst
@@ -57,32 +59,32 @@ Partial Class formKasutajaAken
         Me.txtValjundTekst2.Size = New System.Drawing.Size(210, 26)
         Me.txtValjundTekst2.TabIndex = 2
         '
-        'Label1
+        'lblSisendTekst
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(131, 85)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(97, 20)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Sisendtekst:"
+        Me.lblSisendTekst.AutoSize = True
+        Me.lblSisendTekst.Location = New System.Drawing.Point(131, 85)
+        Me.lblSisendTekst.Name = "lblSisendTekst"
+        Me.lblSisendTekst.Size = New System.Drawing.Size(97, 20)
+        Me.lblSisendTekst.TabIndex = 3
+        Me.lblSisendTekst.Text = "Sisendtekst:"
         '
-        'Label2
+        'lblValjundTekst1
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(40, 167)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(188, 20)
-        Me.Label2.TabIndex = 4
-        Me.Label2.Text = "Pööramine funktsiooniga:"
+        Me.lblValjundTekst1.AutoSize = True
+        Me.lblValjundTekst1.Location = New System.Drawing.Point(40, 167)
+        Me.lblValjundTekst1.Name = "lblValjundTekst1"
+        Me.lblValjundTekst1.Size = New System.Drawing.Size(188, 20)
+        Me.lblValjundTekst1.TabIndex = 4
+        Me.lblValjundTekst1.Text = "Pööramine funktsiooniga:"
         '
-        'Label3
+        'lblValjundTekst2
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(37, 263)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(191, 20)
-        Me.Label3.TabIndex = 5
-        Me.Label3.Text = "Pööramine protseduuriga:"
+        Me.lblValjundTekst2.AutoSize = True
+        Me.lblValjundTekst2.Location = New System.Drawing.Point(37, 263)
+        Me.lblValjundTekst2.Name = "lblValjundTekst2"
+        Me.lblValjundTekst2.Size = New System.Drawing.Size(191, 20)
+        Me.lblValjundTekst2.TabIndex = 5
+        Me.lblValjundTekst2.Text = "Pööramine protseduuriga:"
         '
         'btnPoora1
         '
@@ -124,18 +126,36 @@ Partial Class formKasutajaAken
         '
         Me.TimerUuenda.Interval = 5000
         '
+        'lblTekstiPikkus
+        '
+        Me.lblTekstiPikkus.AutoSize = True
+        Me.lblTekstiPikkus.Location = New System.Drawing.Point(578, 82)
+        Me.lblTekstiPikkus.Name = "lblTekstiPikkus"
+        Me.lblTekstiPikkus.Size = New System.Drawing.Size(0, 20)
+        Me.lblTekstiPikkus.TabIndex = 10
+        '
+        'lblTaisHaalikud
+        '
+        Me.lblTaisHaalikud.AutoSize = True
+        Me.lblTaisHaalikud.Location = New System.Drawing.Point(645, 82)
+        Me.lblTaisHaalikud.Name = "lblTaisHaalikud"
+        Me.lblTaisHaalikud.Size = New System.Drawing.Size(0, 20)
+        Me.lblTaisHaalikud.TabIndex = 11
+        '
         'formKasutajaAken
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(831, 450)
+        Me.Controls.Add(Me.lblTaisHaalikud)
+        Me.Controls.Add(Me.lblTekstiPikkus)
         Me.Controls.Add(Me.btnStop)
         Me.Controls.Add(Me.btnStart)
         Me.Controls.Add(Me.btnPoora2)
         Me.Controls.Add(Me.btnPoora1)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblValjundTekst2)
+        Me.Controls.Add(Me.lblValjundTekst1)
+        Me.Controls.Add(Me.lblSisendTekst)
         Me.Controls.Add(Me.txtValjundTekst2)
         Me.Controls.Add(Me.txtValjundTekst1)
         Me.Controls.Add(Me.txtSisendTekst)
@@ -149,12 +169,14 @@ Partial Class formKasutajaAken
     Friend WithEvents txtSisendTekst As TextBox
     Friend WithEvents txtValjundTekst1 As TextBox
     Friend WithEvents txtValjundTekst2 As TextBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
+    Friend WithEvents lblSisendTekst As Label
+    Friend WithEvents lblValjundTekst1 As Label
+    Friend WithEvents lblValjundTekst2 As Label
     Friend WithEvents btnPoora1 As Button
     Friend WithEvents btnPoora2 As Button
     Friend WithEvents btnStart As Button
     Friend WithEvents btnStop As Button
     Friend WithEvents TimerUuenda As Timer
+    Friend WithEvents lblTekstiPikkus As Label
+    Friend WithEvents lblTaisHaalikud As Label
 End Class
