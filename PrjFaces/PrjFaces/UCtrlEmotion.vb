@@ -2,6 +2,7 @@
     'Klassisisene meetod kuvatava pildi määramiseks
     Private Sub selectMood(ByVal intMood As Integer)
         pbEmotion.Image = imgLoend.Images(intMood)
+
     End Sub
     ' Avalik liidesmeetod
     Public Sub setMood(ByVal strMood As String)
@@ -23,7 +24,7 @@
         End Select
     End Sub
 
-    Private Sub ClearPictureBox()
+    Public Sub ClearPictureBox()
 
         If pbEmotion.Image IsNot Nothing Then
             ' Dispose the image to release resources

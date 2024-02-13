@@ -22,21 +22,15 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.UCtrlEmotion1 = New PrjFaces.UCtrlEmotion()
         Me.btnConfused = New System.Windows.Forms.Button()
         Me.btnCool = New System.Windows.Forms.Button()
         Me.btnSmile = New System.Windows.Forms.Button()
         Me.btnStar = New System.Windows.Forms.Button()
         Me.btnTeeth = New System.Windows.Forms.Button()
         Me.btnYell = New System.Windows.Forms.Button()
+        Me.UCtrlEmotion1 = New PrjFaces.UCtrlEmotion()
+        Me.btnClear = New System.Windows.Forms.Button()
         Me.SuspendLayout()
-        '
-        'UCtrlEmotion1
-        '
-        Me.UCtrlEmotion1.Location = New System.Drawing.Point(149, 136)
-        Me.UCtrlEmotion1.Name = "UCtrlEmotion1"
-        Me.UCtrlEmotion1.Size = New System.Drawing.Size(228, 147)
-        Me.UCtrlEmotion1.TabIndex = 0
         '
         'btnConfused
         '
@@ -92,11 +86,29 @@ Partial Class Form1
         Me.btnYell.Text = "Yell"
         Me.btnYell.UseVisualStyleBackColor = True
         '
+        'UCtrlEmotion1
+        '
+        Me.UCtrlEmotion1.Location = New System.Drawing.Point(149, 136)
+        Me.UCtrlEmotion1.Name = "UCtrlEmotion1"
+        Me.UCtrlEmotion1.Size = New System.Drawing.Size(228, 147)
+        Me.UCtrlEmotion1.TabIndex = 0
+        '
+        'btnClear
+        '
+        Me.btnClear.Enabled = False
+        Me.btnClear.Location = New System.Drawing.Point(598, 395)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(75, 23)
+        Me.btnClear.TabIndex = 7
+        Me.btnClear.Text = "Puhasta"
+        Me.btnClear.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnYell)
         Me.Controls.Add(Me.btnTeeth)
         Me.Controls.Add(Me.btnStar)
@@ -117,4 +129,5 @@ Partial Class Form1
     Friend WithEvents btnStar As Button
     Friend WithEvents btnTeeth As Button
     Friend WithEvents btnYell As Button
+    Friend WithEvents btnClear As Button
 End Class
