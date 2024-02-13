@@ -22,4 +22,8 @@
                 Me.selectMood(0)
         End Select
     End Sub
+
+    Private Sub UCtrlEmotion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
