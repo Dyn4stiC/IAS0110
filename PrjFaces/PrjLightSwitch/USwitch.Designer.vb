@@ -22,17 +22,27 @@ Partial Class USwitch
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(USwitch))
         Me.pbSwitch = New System.Windows.Forms.PictureBox()
+        Me.imgSwitch = New System.Windows.Forms.ImageList(Me.components)
         CType(Me.pbSwitch, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pbSwitch
         '
-        Me.pbSwitch.Location = New System.Drawing.Point(178, 265)
+        Me.pbSwitch.Location = New System.Drawing.Point(20, 27)
         Me.pbSwitch.Name = "pbSwitch"
         Me.pbSwitch.Size = New System.Drawing.Size(100, 50)
         Me.pbSwitch.TabIndex = 0
         Me.pbSwitch.TabStop = False
+        '
+        'imgSwitch
+        '
+        Me.imgSwitch.ImageStream = CType(resources.GetObject("imgSwitch.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.imgSwitch.TransparentColor = System.Drawing.Color.Transparent
+        Me.imgSwitch.Images.SetKeyName(0, "OFF.png")
+        Me.imgSwitch.Images.SetKeyName(1, "ON.png")
         '
         'USwitch
         '
@@ -40,11 +50,12 @@ Partial Class USwitch
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.pbSwitch)
         Me.Name = "USwitch"
-        Me.Size = New System.Drawing.Size(800, 450)
+        Me.Size = New System.Drawing.Size(145, 128)
         CType(Me.pbSwitch, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents pbSwitch As PictureBox
+    Friend WithEvents imgSwitch As ImageList
 End Class
