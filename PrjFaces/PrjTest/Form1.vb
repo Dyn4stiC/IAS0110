@@ -41,4 +41,9 @@
         UCtrlEmotion1.ClearPictureBox()
         btnClear.Enabled = False
     End Sub
+
+    Private Sub UBulb1_Load(sender As Object, e As EventArgs) _
+            Handles UBulb1.Load
+        UBulb1.setLight("off")
+    End Sub
 End Class

@@ -124,6 +124,10 @@
       <Project>{68EDC038-712A-431E-BB7A-9446779ABF3B}</Project>
       <Name>PrjFaces</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PrjLightBulb\PrjLightBulb.vbproj">
+      <Project>{5BE43216-E9FC-49FE-948B-8C2205F564DC}</Project>
+      <Name>PrjLightBulb</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

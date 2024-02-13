@@ -28,8 +28,9 @@ Partial Class Form1
         Me.btnStar = New System.Windows.Forms.Button()
         Me.btnTeeth = New System.Windows.Forms.Button()
         Me.btnYell = New System.Windows.Forms.Button()
-        Me.UCtrlEmotion1 = New PrjFaces.UCtrlEmotion()
         Me.btnClear = New System.Windows.Forms.Button()
+        Me.UCtrlEmotion1 = New PrjFaces.UCtrlEmotion()
+        Me.UBulb1 = New PrjLightBulb.UBulb()
         Me.SuspendLayout()
         '
         'btnConfused
@@ -86,13 +87,6 @@ Partial Class Form1
         Me.btnYell.Text = "Yell"
         Me.btnYell.UseVisualStyleBackColor = True
         '
-        'UCtrlEmotion1
-        '
-        Me.UCtrlEmotion1.Location = New System.Drawing.Point(149, 136)
-        Me.UCtrlEmotion1.Name = "UCtrlEmotion1"
-        Me.UCtrlEmotion1.Size = New System.Drawing.Size(228, 147)
-        Me.UCtrlEmotion1.TabIndex = 0
-        '
         'btnClear
         '
         Me.btnClear.Enabled = False
@@ -103,11 +97,26 @@ Partial Class Form1
         Me.btnClear.Text = "Puhasta"
         Me.btnClear.UseVisualStyleBackColor = True
         '
+        'UCtrlEmotion1
+        '
+        Me.UCtrlEmotion1.Location = New System.Drawing.Point(43, 12)
+        Me.UCtrlEmotion1.Name = "UCtrlEmotion1"
+        Me.UCtrlEmotion1.Size = New System.Drawing.Size(228, 147)
+        Me.UCtrlEmotion1.TabIndex = 0
+        '
+        'UBulb1
+        '
+        Me.UBulb1.Location = New System.Drawing.Point(43, 165)
+        Me.UBulb1.Name = "UBulb1"
+        Me.UBulb1.Size = New System.Drawing.Size(287, 255)
+        Me.UBulb1.TabIndex = 8
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.UBulb1)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnYell)
         Me.Controls.Add(Me.btnTeeth)
@@ -130,4 +139,5 @@ Partial Class Form1
     Friend WithEvents btnTeeth As Button
     Friend WithEvents btnYell As Button
     Friend WithEvents btnClear As Button
+    Friend WithEvents UBulb1 As PrjLightBulb.UBulb
 End Class

@@ -11,8 +11,8 @@
                 Me.selectLightMode(0)
             Case "on"
                 Me.selectLightMode(1)
-            Case Else
-                Me.selectLightMode(0)
         End Select
     End Sub
+
+
 End Class
