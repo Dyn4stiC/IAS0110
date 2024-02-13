@@ -23,7 +23,13 @@
         End Select
     End Sub
 
-    Private Sub UCtrlEmotion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub ClearPictureBox()
 
+        If pbEmotion.Image IsNot Nothing Then
+            ' Dispose the image to release resources
+            pbEmotion.Image.Dispose()
+            ' Set the PictureBox's image property to Nothing
+            pbEmotion.Image = Nothing
+        End If
     End Sub
 End Class
