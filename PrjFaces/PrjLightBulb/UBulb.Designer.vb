@@ -22,9 +22,40 @@ Partial Class UBulb
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UBulb))
+        Me.pbBulb = New System.Windows.Forms.PictureBox()
+        Me.imgBulb = New System.Windows.Forms.ImageList(Me.components)
+        CType(Me.pbBulb, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'pbBulb
+        '
+        Me.pbBulb.Location = New System.Drawing.Point(21, 15)
+        Me.pbBulb.Name = "pbBulb"
+        Me.pbBulb.Size = New System.Drawing.Size(200, 200)
+        Me.pbBulb.TabIndex = 0
+        Me.pbBulb.TabStop = False
+        '
+        'imgBulb
+        '
+        Me.imgBulb.ImageStream = CType(resources.GetObject("imgBulb.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.imgBulb.TransparentColor = System.Drawing.Color.Transparent
+        Me.imgBulb.Images.SetKeyName(0, "3-bulb-png-image-thumb.png")
+        Me.imgBulb.Images.SetKeyName(1, "4-yellow-light-bulb-png-image-thumb.png")
+        '
+        'UBulb
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.pbBulb)
+        Me.Name = "UBulb"
+        Me.Size = New System.Drawing.Size(237, 234)
+        CType(Me.pbBulb, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+
     End Sub
 
+    Friend WithEvents pbBulb As PictureBox
+    Friend WithEvents imgBulb As ImageList
 End Class
