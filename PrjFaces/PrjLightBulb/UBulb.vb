@@ -8,11 +8,11 @@
     Public Sub setLight(ByVal strMood As String)
         Select Case strMood
             Case "off"
-                Me.selectMood(0)
+                Me.selectLightMode(0)
             Case "on"
-                Me.selectMood(1)
+                Me.selectLightMode(1)
             Case Else
-                Me.selectMood(0)
+                Me.selectLightMode(0)
         End Select
     End Sub
 End Class
