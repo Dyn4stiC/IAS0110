@@ -31,9 +31,10 @@ Partial Class UCtrlEmotion
         '
         'pbEmotion
         '
-        Me.pbEmotion.Location = New System.Drawing.Point(93, 51)
+        Me.pbEmotion.Location = New System.Drawing.Point(140, 78)
+        Me.pbEmotion.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.pbEmotion.Name = "pbEmotion"
-        Me.pbEmotion.Size = New System.Drawing.Size(32, 32)
+        Me.pbEmotion.Size = New System.Drawing.Size(48, 49)
         Me.pbEmotion.TabIndex = 0
         Me.pbEmotion.TabStop = False
         '
@@ -50,11 +51,12 @@ Partial Class UCtrlEmotion
         '
         'UCtrlEmotion
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.pbEmotion)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "UCtrlEmotion"
-        Me.Size = New System.Drawing.Size(228, 147)
+        Me.Size = New System.Drawing.Size(342, 226)
         CType(Me.pbEmotion, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

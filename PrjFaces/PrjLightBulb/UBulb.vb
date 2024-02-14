@@ -5,11 +5,11 @@
 
     End Sub
     ' Avalik liidesmeetod
-    Public Sub setLight(ByVal strMood As String)
-        Select Case strMood
-            Case "off"
+    Public Sub setLight(ByVal intLight As Integer)
+        Select Case intLight
+            Case 0
                 Me.selectLightMode(0)
-            Case "on"
+            Case 1
                 Me.selectLightMode(1)
         End Select
     End Sub

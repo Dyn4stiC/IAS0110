@@ -46,26 +46,21 @@ Public Class Form1
     End Sub
 
     Private Sub UBulb1_Load(sender As Object, e As EventArgs) _
-            Handles UBulb1.Load
-        UBulb1.setLight("off")
+         Handles UBulb1.Load
+        UBulb1.setLight(0)
     End Sub
 
-    Private Sub USwitch1_Load(sender As Object, e As EventArgs) _
-            Handles USwitch1.Load
-        USwitch1.setSwitch("on")
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        tmrBulb.Start()
     End Sub
 
-    Private Sub USwitch1_Click(sender As Object, e As EventArgs) _
-        Handles USwitch1.Click
-        If bool = False Then
-            USwitch1.setSwitch("on")
-            UBulb1.setLight("off")
-            bool = True
-        Else
-            USwitch1.setSwitch("off")
-            UBulb1.setLight("on")
-            bool = False
-        End If
+
+    Private Sub tmrBulb_Tick(sender As Object, e As EventArgs) Handles tmrBulb.Tick
+        Dim state As Integer
+        state = USwitch1.bool
+        UBulb1.setLight(state)
 
     End Sub
+
 End Class
