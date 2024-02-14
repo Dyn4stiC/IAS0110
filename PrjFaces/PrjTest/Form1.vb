@@ -57,12 +57,6 @@ Public Class Form1
 
     Private Sub USwitch1_Click(sender As Object, e As EventArgs) _
         Handles USwitch1.Click
-
-
-    End Sub
-
-
-    Private Sub USwitch1_MouseClick(sender As Object, e As MouseEventArgs) Handles USwitch1.MouseClick
         If bool = False Then
             USwitch1.setSwitch("on")
             UBulb1.setLight("off")
@@ -72,5 +66,6 @@ Public Class Form1
             UBulb1.setLight("on")
             bool = False
         End If
+
     End Sub
 End Class
