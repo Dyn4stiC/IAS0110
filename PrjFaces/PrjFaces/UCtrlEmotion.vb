@@ -1,6 +1,7 @@
 ﻿Public Class UCtrlEmotion
     'Klassisisene meetod kuvatava pildi määramiseks
     Private Sub selectMood(ByVal intMood As Integer)
+        ClearPictureBox()
         pbEmotion.Image = imgLoend.Images(intMood)
 
     End Sub
@@ -32,9 +33,5 @@
             ' Set the PictureBox's image property to Nothing
             pbEmotion.Image = Nothing
         End If
-    End Sub
-
-    Private Sub UCtrlEmotion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
     End Sub
 End Class
