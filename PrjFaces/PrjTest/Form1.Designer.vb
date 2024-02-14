@@ -31,9 +31,9 @@ Partial Class Form1
         Me.btnYell = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.UCtrlEmotion1 = New PrjFaces.UCtrlEmotion()
+        Me.tmrBulb = New System.Windows.Forms.Timer(Me.components)
         Me.UBulb1 = New PrjLightBulb.UBulb()
         Me.USwitch1 = New PrjLightSwitch.USwitch()
-        Me.tmrBulb = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'btnConfused
@@ -114,6 +114,9 @@ Partial Class Form1
         Me.UCtrlEmotion1.Name = "UCtrlEmotion1"
         Me.UCtrlEmotion1.Size = New System.Drawing.Size(342, 226)
         Me.UCtrlEmotion1.TabIndex = 0
+        '
+        'tmrBulb
+        '
         '
         'UBulb1
         '

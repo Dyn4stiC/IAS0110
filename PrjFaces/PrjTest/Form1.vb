@@ -2,6 +2,7 @@
 
 Public Class Form1
 
+    Dim state As Integer
     Private bool As Boolean = False
     Private Sub btnConfused_Click(ByVal sender As Object, ByVal e As EventArgs) _
             Handles btnConfused.Click
@@ -57,7 +58,7 @@ Public Class Form1
 
 
     Private Sub tmrBulb_Tick(sender As Object, e As EventArgs) Handles tmrBulb.Tick
-        Dim state As Integer
+
         state = USwitch1.bool
         UBulb1.setLight(state)
 
