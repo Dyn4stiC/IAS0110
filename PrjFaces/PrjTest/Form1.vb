@@ -1,5 +1,8 @@
-﻿Public Class Form1
+﻿Imports PrjLightSwitch
 
+Public Class Form1
+
+    Private bool As Boolean = False
     Private Sub btnConfused_Click(ByVal sender As Object, ByVal e As EventArgs) _
             Handles btnConfused.Click
         UCtrlEmotion1.setMood("confused")
@@ -45,5 +48,29 @@
     Private Sub UBulb1_Load(sender As Object, e As EventArgs) _
             Handles UBulb1.Load
         UBulb1.setLight("off")
+    End Sub
+
+    Private Sub USwitch1_Load(sender As Object, e As EventArgs) _
+            Handles USwitch1.Load
+        USwitch1.setSwitch("on")
+    End Sub
+
+    Private Sub USwitch1_Click(sender As Object, e As EventArgs) _
+        Handles USwitch1.Click
+
+
+    End Sub
+
+
+    Private Sub USwitch1_MouseClick(sender As Object, e As MouseEventArgs) Handles USwitch1.MouseClick
+        If bool = False Then
+            USwitch1.setSwitch("on")
+            UBulb1.setLight("off")
+            bool = True
+        Else
+            USwitch1.setSwitch("off")
+            UBulb1.setLight("on")
+            bool = False
+        End If
     End Sub
 End Class

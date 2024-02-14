@@ -31,9 +31,9 @@ Partial Class USwitch
         '
         'pbSwitch
         '
-        Me.pbSwitch.Location = New System.Drawing.Point(20, 27)
+        Me.pbSwitch.Location = New System.Drawing.Point(21, 29)
         Me.pbSwitch.Name = "pbSwitch"
-        Me.pbSwitch.Size = New System.Drawing.Size(100, 50)
+        Me.pbSwitch.Size = New System.Drawing.Size(95, 44)
         Me.pbSwitch.TabIndex = 0
         Me.pbSwitch.TabStop = False
         '
@@ -50,7 +50,7 @@ Partial Class USwitch
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.pbSwitch)
         Me.Name = "USwitch"
-        Me.Size = New System.Drawing.Size(145, 128)
+        Me.Size = New System.Drawing.Size(139, 104)
         CType(Me.pbSwitch, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

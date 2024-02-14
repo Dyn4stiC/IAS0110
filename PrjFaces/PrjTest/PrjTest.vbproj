@@ -128,6 +128,10 @@
       <Project>{5BE43216-E9FC-49FE-948B-8C2205F564DC}</Project>
       <Name>PrjLightBulb</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PrjLightSwitch\PrjLightSwitch.vbproj">
+      <Project>{288CDEE4-5392-4938-AE30-F63B4521A1E0}</Project>
+      <Name>PrjLightSwitch</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
