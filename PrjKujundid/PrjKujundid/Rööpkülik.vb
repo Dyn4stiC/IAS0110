@@ -1,4 +1,4 @@
-﻿Public Class Rööpkülik
+﻿Public Class Roopkylik
     Inherits Nelinurk
 
     Private korgus As Double

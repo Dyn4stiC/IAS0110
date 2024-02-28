@@ -5,8 +5,8 @@
 
 
 
-        txtPindala.Text = kujund.leiaPindala
-        txtYmbermoot.Text = kujund.leiaYmberMoot
+        txtPindala.Text = Math.Round(kujund.leiaPindala, cbTapsus.SelectedIndex)
+        txtYmbermoot.Text = Math.Round(kujund.leiaYmberMoot, cbTapsus.SelectedIndex)
     End Sub
 
     Private Sub btnKolmnurk_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) _
@@ -29,20 +29,35 @@
         tootleKujund(New Ristkylik(txtKylgA.Text, txtKylgB.Text))
     End Sub
 
+
+    Private Sub btnRomb_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) _
+        Handles btnRomb.Click
+        tootleKujund(New Romb(txtKylgA.Text, txtKorgus.Text))
+    End Sub
+
+    Private Sub btnRoopkylik_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) _
+        Handles btnRoopkylik.Click
+        tootleKujund(New Roopkylik(txtKylgA.Text, txtKylgB.Text, txtKorgus.Text))
+    End Sub
+
+
     Private Sub tmr_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) _
         Handles tmr.Tick
 
-        If IsNumeric(txtKylgA.Text) And IsNumeric(txtKylgB.Text) Then
+
+        If IsNumeric(txtKylgA.Text) And IsNumeric(txtKylgB.Text) And IsNumeric(txtKorgus.Text) Then
+            btnRuut.Enabled = True
+            btnKolmnurk.Enabled = True
+            btnRistkylik.Enabled = True
+            btnRomb.Enabled = True
+            btnRoopkylik.Enabled = True
+
+        ElseIf IsNumeric(txtKylgA.Text) And IsNumeric(txtKylgB.Text) Then
             btnRuut.Enabled = True
             btnKolmnurk.Enabled = True
             btnRistkylik.Enabled = True
             btnRomb.Enabled = False
             btnRoopkylik.Enabled = False
-
-            If IsNumeric(txtKorgus.Text) Then
-                btnRomb.Enabled = True
-                btnRoopkylik.Enabled = True
-            End If
 
         ElseIf IsNumeric(txtKylgA.Text) And Not IsNumeric(txtKylgB.Text) Then
             btnRuut.Enabled = True
@@ -58,5 +73,9 @@
             btnRomb.Enabled = False
             btnRoopkylik.Enabled = False
         End If
+    End Sub
+
+    Private Sub formKujundid_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        cbTapsus.SelectedIndex = 0
     End Sub
 End Class
