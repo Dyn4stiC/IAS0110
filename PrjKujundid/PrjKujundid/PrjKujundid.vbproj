@@ -99,7 +99,9 @@
     </Compile>
     <Compile Include="Nelinurk.vb" />
     <Compile Include="Ristkülik.vb" />
+    <Compile Include="Romb.vb" />
     <Compile Include="Ruut.vb" />
+    <Compile Include="Rööpkülik.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="formKujundid.resx">

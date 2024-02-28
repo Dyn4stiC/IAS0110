@@ -36,13 +36,27 @@
             btnRuut.Enabled = True
             btnKolmnurk.Enabled = True
             btnRistkylik.Enabled = True
+            btnRomb.Enabled = False
+            btnRoopkylik.Enabled = False
+
+            If IsNumeric(txtKorgus.Text) Then
+                btnRomb.Enabled = True
+                btnRoopkylik.Enabled = True
+            End If
 
         ElseIf IsNumeric(txtKylgA.Text) And Not IsNumeric(txtKylgB.Text) Then
             btnRuut.Enabled = True
+            btnKolmnurk.Enabled = False
+            btnRistkylik.Enabled = False
+            btnRomb.Enabled = False
+            btnRoopkylik.Enabled = False
+
         Else
             btnRuut.Enabled = False
             btnKolmnurk.Enabled = False
             btnRistkylik.Enabled = False
+            btnRomb.Enabled = False
+            btnRoopkylik.Enabled = False
         End If
     End Sub
 End Class
