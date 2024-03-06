@@ -1,0 +1,12 @@
+P:\TarkvaraTehnika\repos\prjTekstiOmadused\PrjTekstiOmadused\bin\Debug\PrjTekstiOmadused.exe.config
+P:\TarkvaraTehnika\repos\prjTekstiOmadused\PrjTekstiOmadused\bin\Debug\PrjTekstiOmadused.exe
+P:\TarkvaraTehnika\repos\prjTekstiOmadused\PrjTekstiOmadused\bin\Debug\PrjTekstiOmadused.pdb
+P:\TarkvaraTehnika\repos\prjTekstiOmadused\PrjTekstiOmadused\bin\Debug\PrjTekstiOmadused.xml
+P:\TarkvaraTehnika\repos\prjTekstiOmadused\PrjTekstiOmadused\obj\Debug\PrjTekstiOmadused.vbproj.AssemblyReference.cache
+P:\TarkvaraTehnika\repos\prjTekstiOmadused\PrjTekstiOmadused\obj\Debug\PrjTekstiOmadused.EkraaniVorm.resources
+P:\TarkvaraTehnika\repos\prjTekstiOmadused\PrjTekstiOmadused\obj\Debug\PrjTekstiOmadused.Resources.resources
+P:\TarkvaraTehnika\repos\prjTekstiOmadused\PrjTekstiOmadused\obj\Debug\PrjTekstiOmadused.vbproj.GenerateResource.cache
+P:\TarkvaraTehnika\repos\prjTekstiOmadused\PrjTekstiOmadused\obj\Debug\PrjTekstiOmadused.vbproj.CoreCompileInputs.cache
+P:\TarkvaraTehnika\repos\prjTekstiOmadused\PrjTekstiOmadused\obj\Debug\PrjTekstiOmadused.exe
+P:\TarkvaraTehnika\repos\prjTekstiOmadused\PrjTekstiOmadused\obj\Debug\PrjTekstiOmadused.xml
+P:\TarkvaraTehnika\repos\prjTekstiOmadused\PrjTekstiOmadused\obj\Debug\PrjTekstiOmadused.pdb
